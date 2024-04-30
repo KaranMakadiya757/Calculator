@@ -1,5 +1,4 @@
 import React from "react";
-import "./Display.css";
 
 const Display = ({ input, setInput, answer }) => {
   const onChangeTagInput = (e) => {
@@ -12,13 +11,13 @@ const Display = ({ input, setInput, answer }) => {
 
   return (
     <>
-      <div className="display">
+      <div className='flex flex-col p-3 pb-5 bg-gradient-to-r from-teal-500 to-blue-500 '>
         {answer === "" ? (
           <>
             <input
               type="text"
               name="input"
-              className="input"
+              className='p-3 text-right bg-transparent text-white border-none tracking-wide text-4xl placeholder:text-white'
               style={{ padding: "29px" }}
               value={input}
               placeholder="0"
@@ -34,7 +33,7 @@ const Display = ({ input, setInput, answer }) => {
             <input
               type="text"
               name="input"
-              className="value"
+              className='p-3 text-right bg-transparent text-white border-none tracking-wide text-sm placeholder:text-white focus:outline-none'
               value={input}
               placeholder="0"
               maxLength={12}
@@ -43,7 +42,7 @@ const Display = ({ input, setInput, answer }) => {
             <input
               type="text"
               name="value"
-              className="input"
+              className='p-3 text-right bg-transparent text-white border-none tracking-wide text-4xl placeholder:text-white focus:outline-none'
               value={answer}
               disabled
             />
