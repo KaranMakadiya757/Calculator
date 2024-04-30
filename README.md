@@ -1,6 +1,6 @@
-# React + Vite + Tailwind
+# Simple calculator
 
-## Simple calculator
+- React + Vite + Tailwind
 - You can perform Simple math calculations
 - Enter the details using Keyboard
 
